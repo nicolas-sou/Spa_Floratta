@@ -321,6 +321,7 @@
   background-color: #dfe4ea;
   border-radius: 5px;
   resize: none;
+  width: 100%;
 }
 
 .header__form input::placeholder {
