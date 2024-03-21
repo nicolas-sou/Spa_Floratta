@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/src/image/icons8-lótus-16.png" type="image/x-icon">
+    <title>Spa Floratta</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/src/style/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -26,15 +28,8 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-lg-end order-lg-2" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#"><i class="bi bi-images"></i> Galeria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-person-vcard-fill"></i> Fale Conosco</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                <i class="bi bi-journal"></i>
                                 Tratamentos
                             </a>
                             <ul class="dropdown-menu">
@@ -45,6 +40,16 @@
                                 <li><a class="dropdown-item" href="#">Internação voluntária</a></li>
                                 <li><a class="dropdown-item" href="#">Tratamentos para menores</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/src/pages/Gallery.html"> Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Formulario"> Fale Conosco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://www.google.com/maps/place/SPA+TERAP%C3%8AUTICO+FLORATTA/@-24.3189299,-47.0005164,15z/data=!4m6!3m5!1s0x94d02717a8f04f01:0x587ee810c8187868!8m2!3d-24.3189299!4d-47.0005164!16s%2Fg%2F11qn64bdsq?entry=ttu">Localização</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +64,7 @@
                     Somos uma clínica que prioriza a reabilitação de nossos
                     pacientes para reintegração a sociedade...
                 </p>
-                <a href="#" class="button-img">Saiba +</a>
+                <a href="/src/pages/Saiba.html" class="button-img">Saiba mais</a>
             </div>
         </div>
     </section>
@@ -109,7 +114,7 @@
                 Cuidados Específicos </h1>
             <div class="container-group">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 pb-5" data-aos="fade-right" data-aos-offset="100"
+                    <div class="col-lg-6 pb-5" data-aos="fade-right" data-aos-offset="100"
                         data-aos-easing="ease-in-sine">
                         <a href="#">
                             <div class="card">
@@ -126,7 +131,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 pb-5" data-aos="fade-right" data-aos-offset="200"
+                    <div class="col-lg-6 pb-5" data-aos="fade-right" data-aos-offset="200"
                         data-aos-easing="ease-in-sine">
                         <a href="#">
                             <div class="card">
@@ -142,7 +147,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 pb-5" data-aos="fade-right" data-aos-offset="300"
+                    <div class="col-lg-6 pb-5" data-aos="fade-right" data-aos-offset="200"
                         data-aos-easing="ease-in-sine">
                         <a href="">
                             <div class="card">
@@ -158,40 +163,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 pb-5" data-aos="fade-right" data-aos-offset="100"
-                        data-aos-easing="ease-in-sine">
-                        <a href="">
-                            <div class="card">
-                                <img src="/src/image/voluntario.png">
-                                <div class="card-body">
-                                    <h4 class="section-title text-card">Internação voluntário</h4>
-                                    <p>
-                                        A internação voluntária é um processo de internamento em uma instituição de
-                                        saúde ou
-                                        clínica especializada, onde o paciente concorda em se internar por vontade
-                                        própria.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-5" data-aos="fade-right" data-aos-offset="200"
-                        data-aos-easing="ease-in-sine">
-                        <a href="">
-                            <div class="card">
-                                <img src="/src/image/involuntario.png">
-                                <div class="card-body">
-                                    <h4 class="section-title text-card">Internação Involuntária</h4>
-                                    <p>
-                                        A internação involuntária pode ser uma opção para pessoas que sofrem de
-                                        dependência
-                                        química ou transtornos mentais graves e que, por diversas razões.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-5" data-aos="fade-right" data-aos-offset="300"
+                    <div class="col-lg-6 pb-5" data-aos="fade-right" data-aos-offset="200"
                         data-aos-easing="ease-in-sine">
                         <a href="">
                             <div class="card">
@@ -210,98 +182,192 @@
             </div>
         </div>
     </section>
-    <section class="section__container customer__container">
-        <div class="customer__nav">
-            <h2 class="section__header" data-aos="fade-right">O que as pessoas falam sobre nós:</h2>
-            <div class="customer__nav__icons">
-                <span><i data-tab-button="depoimento-1" class="ri-arrow-left-line button--is-active"></i></span>
-                <span><i data-tab-button="depoimento-2" class="ri-arrow-right-line"></i></span>
-            </div>
-        </div>
-        <div data-tab-id="depoimento-1" class="customer__grid customer__grid--is-active">
-            <div class="customer__card">
-                <span><i class="ri-double-quotes-l"></i></span>
-                <h4 class="customer__title">A experiência foi além das minhas expectativas</h4>
-                <p class="customer__description">
-                    Como empresária, sei o quanto o estresse e a pressão podem afetar a saúde mental. A clínica
-                    terapêutica Spa Floratta oferece um refúgio seguro e acolhedor, onde as mulheres podem se reconectar
-                    consigo mesmas e encontrar o equilíbrio necessário para enfrentar os desafios da vida. Os programas
-                    de tratamento são abrangentes e adaptados às necessidades individuais de cada paciente. Estou
-                    extremamente grata pelo apoio e orientação que recebi durante minha estadia na clínica.
-                </p>
-                <div class="customer__content">
-                    <span><img src="/src/image/perfil-1.png" alt="user" /></span>
-                    <div class="customer__details">
-                        <h4>Sofia Oliveira</h4>
-                        <p>Empresária</p>
-                    </div>
+    <section class="servicos">
+        <div class="container">
+            <div class="Convenio" data-aos="flip-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="Bloco__convenio">
+                    <h1>Convênios </h1>
+                    <p>A Spa Floratta oferece acesso a clínicas de reabilitação de alta qualidade, que recebem pacientes
+                        femininos para internação por meio de planos de saúde e convênios médicos.</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511963329809" class="convenio__button">Consulte
+                        Convênios</a>
                 </div>
             </div>
-            <div class="customer__card">
-                <span><i class="ri-double-quotes-l"></i></span>
-                <h4 class="customer__title">
-                    Uma jornada de superação e crescimento
-                </h4>
-                <p class="customer__description">
-                    Como psicóloga, sei a importância de um ambiente terapêutico seguro e inclusivo. A clínica
-                    terapêutica Spa Floratta oferece um espaço onde as mulheres podem explorar seus desafios e
-                    fortalecer
-                    suas habilidades de enfrentamento. O trabalho realizado pelos terapeutas é verdadeiramente
-                    inspirador, ajudando as pacientes a desenvolverem um maior autoconhecimento e autoestima. É um
-                    privilégio recomendar esta clínica a todas as mulheres que buscam apoio e crescimento pessoal.
-                </p>
-                <div class="customer__content">
-                    <span><img src="/src/image/perfil-2.png" alt="user" /></span>
-                    <div class="customer__details">
-                        <h4>Carla Santos </h4>
-                        <p>Psicóloga</p>
+            <div class="container-group">
+                <div class="row">
+                    <div class="col-lg-6 pb-5" data-aos="zoom-out">
+                        <a href="">
+                            <div class="card">
+                                <img src="/src/image/voluntario.png">
+                                <div class="card-body">
+                                    <h4 class="section-title text-card">Internação voluntário</h4>
+                                    <p>
+                                        A internação voluntária é um processo de internamento em uma instituição de
+                                        saúde ou
+                                        clínica especializada, onde o paciente concorda em se internar por vontade
+                                        própria.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </div>
-
-        </div>
-        <div data-tab-id="depoimento-2" class="customer__grid">
-            <div class="customer__card">
-                <span><i class="ri-double-quotes-l"></i></span>
-                <h4 class="customer__title">Um novo começo graças aos cuidados dedicados</h4>
-                <p class="customer__description">
-                    Como advogada, sei a importância de um ambiente seguro e acolhedor para a recuperação. A clínica
-                    terapêutica Spa Floratta não apenas fornece esse ambiente, mas também oferece um suporte excepcional
-                    e
-                    programas de tratamento personalizados. Estou muito grata pelo cuidado e apoio que recebi durante
-                    minha jornada de recuperação.
-                </p>
-                <div class="customer__content">
-                    <span><img src="/src/image/perfil-3.png" alt="user" /></span>
-                    <div class="customer__details">
-                        <h4>Maria da Silva</h4>
-                        <p>Advogada</p>
-                    </div>
-                </div>
-            </div>
-            <div class="customer__card">
-                <span><i class="ri-double-quotes-l"></i></span>
-                <h4 class="customer__title">
-                    Impacto positivo
-                </h4>
-                <p class="customer__description">
-                    Como professora e mãe, sei como é essencial cuidar da saúde mental e emocional. A clínica
-                    terapêutica Spa Floratta proporciona um espaço onde as mulheres podem se sentir compreendidas e
-                    apoiadas. Os terapeutas são verdadeiros profissionais, dedicados a ajudar cada paciente a encontrar
-                    o seu caminho para a cura. Recomendo de coração esta clínica a todas as mulheres que precisam de
-                    ajuda.
-                </p>
-                <div class="customer__content">
-                    <span><img src="/src/image/perfil-4.png" alt="user" /></span>
-                    <div class="customer__details">
-                        <h4>Ana Souza</h4>
-                        <p>Professora</p>
+                    <div class="col-lg-6 pb-5" data-aos="zoom-out">
+                        <a href="">
+                            <div class="card">
+                                <img src="/src/image/involuntario.png">
+                                <div class="card-body">
+                                    <h4 class="section-title text-card">Internação Involuntária</h4>
+                                    <p>
+                                        A internação involuntária pode ser uma opção para pessoas que sofrem de
+                                        dependência
+                                        química ou transtornos mentais graves e que, por diversas razões.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="Formulario">
+    <section class="Depoimentos">
+        <div class="container">
+            <h2 data-aos="fade-right">Qual é a percepção que as pessoas têm sobre nós?</h2>
+        </div>
+        <div class="swiper mySwiper" data-aos="fade-down">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="body_depoimento">
+                            <p>Como empresária, reconheço os efeitos do estresse na saúde mental. O Spa Floratta oferece
+                                um refúgio seguro para mulheres, promovendo equilíbrio e reconexão consigo mesmas. Seus
+                                programas de tratamento são personalizados, atendendo às necessidades individuais das
+                                pacientes. Sou grata pelo apoio recebido durante minha estadia na clínica.
+                            </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="/src/image/perfil-1.png" alt="">
+                                </div>
+                                <h3>Sofia Oliveira<br><span>Empresária</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="body_depoimento">
+                            <p>Como psicóloga, reconheço a importância de um ambiente terapêutico seguro e inclusivo.
+                                Spa Floratta oferece espaço para mulheres explorarem desafios e fortalecerem habilidades
+                                de enfrentamento. O trabalho dos terapeutas é inspirador, promovendo autoconhecimento e
+                                autoestima. Recomendo esta clínica a todas as mulheres em busca de apoio e crescimento
+                                pessoal.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="/src/image/perfil-2.png" alt="">
+                                </div>
+                                <h3>Carla Santos<br><span>Psicóloga</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="body_depoimento">
+                            <p>Como advogada, sei a importância de um ambiente seguro e acolhedor para a recuperação. A
+                                clínica
+                                terapêutica Spa Floratta não apenas fornece esse ambiente, mas também oferece um suporte
+                                excepcional e programas de tratamento personalizados. Estou muito grata pelo cuidado e
+                                apoio que recebi durante
+                                minha jornada de recuperação.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="/src/image/perfil-3.png" alt="">
+                                </div>
+                                <h3>Maria da Silva<br><span>Advogada</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="body_depoimento">
+                            <p>Como professora e mãe, sei como é essencial cuidar da saúde mental e emocional. A clínica
+                                terapêutica Spa Floratta proporciona um espaço onde as mulheres podem se sentir
+                                compreendidas e apoiadas. Os terapeutas são verdadeiros profissionais, dedicados a
+                                ajudar cada paciente a encontrar o seu caminho para a cura. Recomendo de coração esta
+                                clínica a todas as mulheres que precisam de ajuda.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="/src/image/perfil-4.png" alt="">
+                                </div>
+                                <h3>Maria<br><span>Professora</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="body_depoimento">
+                            <p>
+                                Como enfermeira, encontrar uma clínica de reabilitação de qualidade é vital. A clínica
+                                feminina superou minhas expectativas, oferecendo cuidado individualizado e compaixão.
+                                Sua abordagem tornou minha recuperação mais suportável. Agradeço à equipe dedicada e aos
+                                recursos que facilitaram minha jornada rumo à sobriedade e ao bem-estar.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="/src/image/perfil-5.jpg" alt="">
+                                </div>
+                                <h3>Carolina Oliveira<br><span>Enfermeira</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="body_depoimento">
+                            <p>Como instrutora de yoga, compreendo a necessidade de integrar abordagens holísticas na
+                                reabilitação. A clínica feminina não só prioriza a abstinência, mas também promove o
+                                bem-estar mental, emocional e espiritual. Surpreende-me a gama de terapias
+                                complementares oferecidas, que fortaleceram meu corpo, mente e espírito. Recomendo esta
+                                clínica a mulheres que buscam uma jornada de recuperação transformadora.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="/src/image/perfil-6.jpg" alt="">
+                                </div>
+                                <h3>Mariana Santos<br><span>Professora de Yoga</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="body_depoimento">
+                            <p>A clínica de reabilitação feminina oferece um ambiente terapêutico seguro e inclusivo,
+                                com uma abordagem centrada na paciente. A equipe dedica-se a fornecer cuidados
+                                individualizados, atendendo às necessidades específicas de cada mulher. Durante minha
+                                estadia, testemunhei transformações positivas e progresso em direção à recuperação. Esta
+                                clínica é um farol de esperança para mulheres em busca de um novo começo.
+                            </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="/src/image/perfil-1.png" alt="">
+                                </div>
+                                <h3>Amanda Costa<br><span>Professora</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Formulario" id="Formulario">
         <div class="container">
             <div class="Form__text">
                 <h1>Formulário de Admissão para a <span>Clínica Terapêutica Spa Floratta</span></h1>
@@ -315,15 +381,12 @@
                 <form>
                     <h4>Fale Conosco!</h4>
                     <div class="header__form__itens">
-                        <i class="bi bi-person-fill"></i>
                         <input type="text" placeholder="Seu Nome" />
                     </div>
                     <div class="header__form__itens">
-                        <i class="bi bi-envelope-at-fill"></i>
                         <input type="email" placeholder="Seu E-mail" />
                     </div>
                     <div class="header__form__itens">
-                        <i class="bi bi-telephone-inbound-fill"></i>
                         <input type="number" placeholder="Seu telefone" />
                     </div>
                     <textarea id="mensagem" placeholder="Mande sua mensagem"></textarea>
@@ -342,12 +405,9 @@
             <div class="link-boxes">
                 <ul class="box">
                     <li class="link_name">Localização</li>
-                    <p>
-                        End : João Maria Gabriel, 55 <br>
-                        Bairro : Centro <br>
-                        Cidade : Peruíbe SP <br>
-                        Cep : 11750-000
-                    </p>
+                    <span>João Maria Gabriel, 55</span>
+                    <span>Bairro: Centro, Peruíbe <br></span>
+                    <span>CEP: 11750-000</span>
                 </ul>
                 <ul class="box">
                     <li class="link_name">Tratamentos</li>
@@ -376,6 +436,24 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>
