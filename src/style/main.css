@@ -266,6 +266,7 @@
   line-height: 3rem;
   margin-bottom: 1rem;
   padding-left: 40px;
+  max-width: 56%;
 }
 
 .swiper {
@@ -516,6 +517,12 @@ footer .content .link-boxes .box {
   font-weight: 400;
 }
 
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #000;
+}
+
 .content .link-boxes .box li a:hover {
   opacity: 1;
   color: #9d145c;
@@ -547,6 +554,7 @@ footer .bottom-details .bottom_text {
   opacity: 1;
   border-bottom: 2px solid #9d145c;
 }
+
 .bottom-details .bottom_text a {
   margin-right: 10px;
   text-decoration: underline;
@@ -647,21 +655,22 @@ footer .bottom-details .bottom_text {
     margin: 10% 0 10% 0;
   }
 
-.servicos {
-  background-color: #333333;
-  padding: 0px;
-}
-.Convenio {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-right: 0px;
-  padding: 27px 20px 46px 20px;
-}
+  .servicos {
+    background-color: #333333;
+    padding: 0px;
+  }
 
-.Convenio p {
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
+  .Convenio {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    padding: 27px 20px 46px 20px;
+  }
+
+  .Convenio p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 
   .Formulario {
     height: 160vh;
@@ -693,11 +702,10 @@ footer .bottom-details .bottom_text {
   }
 
   .navbar-collapse {
-    background: #dfe4ea;
+    background: #f1f2f6;
     flex-basis: 100%;
     flex-grow: 1;
     text-align: center;
-    align-items: center;
   }
 
   .benefits__grid {
@@ -737,15 +745,15 @@ footer .bottom-details .bottom_text {
     background: #dfe4ea;
     overflow: hidden;
     flex-wrap: wrap;
-}
+  }
 
-.Depoimentos h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 3rem;
-  margin-bottom: 1rem;
-  padding: 40px;
-}
+  .Depoimentos h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    padding: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

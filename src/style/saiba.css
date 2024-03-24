@@ -32,18 +32,14 @@
 .custom-bg-color {
   background-color: #fff;
 }
-.detalhes{
-    padding: 45px;
- }
+
+.detalhes h1,
+.detalhes h3{
+  color: #9d145c;
+}
 
 .detalhes p {
     padding: 24px;
-}
-
-.arame{
-    position: absolute;
-    top:25%;
-    left: 81%;
 }
 
 .detalhes img {
@@ -51,13 +47,10 @@
     padding: 10px;
 }
 
-.container .detalhes {
-    background-color: #f6f4ef;
-    border-radius: 30px;
-}
-
 .sobre{
-    background-color: #95afc0;
+    background-image: url(/src/image/Banner_saiba.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 50px;
 }
 
@@ -66,9 +59,6 @@
     opacity: 0.8
 }
 
-.sobre__img{
-    width: 100%;
-}
 
 footer {
   background: #fff;
@@ -175,6 +165,13 @@ footer .bottom-details .bottom_text {
   justify-content: space-between;
 }
 
+.content .link-boxes .box span {
+  opacity: 0.8;
+  color: #57606f;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .bottom-details .bottom_text span,
 .bottom-details .bottom_text a {
   font-size: 14px;
@@ -264,7 +261,7 @@ footer .bottom-details .bottom_text {
   }
 
   .navbar-collapse {
-    background: #e0dfdf;
+    background: #f1f2f6;
     flex-basis: 100%;
     flex-grow: 1;
     text-align: center;
