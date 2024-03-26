@@ -753,6 +753,7 @@ footer .bottom-details .bottom_text {
     line-height: 3rem;
     margin-bottom: 1rem;
     padding: 40px;
+    max-width: none;
   }
 }
 
