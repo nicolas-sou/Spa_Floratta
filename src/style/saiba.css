@@ -248,7 +248,7 @@ footer .bottom-details .bottom_text {
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
   }
 
   .navbar-toggler {
@@ -258,6 +258,10 @@ footer .bottom-details .bottom_text {
 
   .navbar > .container-fluid {
     margin: 0px;
+  }
+
+  .navbar-nav{
+    position: relative;;
   }
 
   .navbar-collapse {
